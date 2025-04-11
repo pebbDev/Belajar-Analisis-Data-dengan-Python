@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Bike Sharing Dashboard", layout="wide")
 
-df = pd.read_csv("cleaned_day.csv", parse_dates=["date"])
+df = pd.read_csv("dasboard/cleaned_day.csv", parse_dates=["date"])
 
 st.sidebar.title("Filter Options")
 selected_years = st.sidebar.multiselect("Select Year", options=sorted(df['year'].unique()), default=sorted(df['year'].unique()))
